@@ -1,13 +1,11 @@
 @import '../../../../assets/styles/mixins.scss';
-@import '../../../../assets/styles/media_mixins.scss';
 
 .header {
   display: flex;
   align-items: center;
 
   padding: 20px 0;
-  max-width: var(--width-container);
-  margin: 0 auto;
+  @include container-center;
 
   border-top: 2px solid var(--color-main);
   border-bottom: 2px solid var(--color-main);
@@ -17,7 +15,7 @@
     padding-top: 100px;
     padding-bottom: 50px;
 
-    @include containers-paddings;
+    @include container-paddings;
 
     @include _600 {
       padding-top: 30px;

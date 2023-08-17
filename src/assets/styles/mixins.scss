@@ -1,3 +1,27 @@
+@mixin _1100 {
+  @media (max-width: 1100px){
+      @content;
+  }
+}
+
+@mixin _600 {
+  @media (max-width: 600px){
+      @content;
+  }
+}
+
+@mixin container-center {
+  max-width: var(--width-container);
+  margin: 0 auto;
+}
+
+@mixin container-paddings {
+  @include _1100 {
+    padding-right: var(--padding-container);
+    padding-left: var(--padding-container);
+  }
+}
+
 @mixin none-select {
   user-drag: none;
   -webkit-user-drag: none;
@@ -8,3 +32,6 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+
+
