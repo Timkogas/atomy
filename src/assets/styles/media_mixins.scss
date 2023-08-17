@@ -1,0 +1,21 @@
+@mixin _1100 {
+  @media (max-width: 1100px){
+      @content;
+  }
+}
+
+@mixin _600 {
+  @media (max-width: 600px){
+      @content;
+  }
+}
+
+@mixin containers-paddings {
+  @include _1100 {
+    padding-right: var(--padding-container);
+    padding-left: var(--padding-container);
+  }
+}
+
+
+

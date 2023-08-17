@@ -1,0 +1,35 @@
+@import "../../../assets/styles/media_mixins.scss";
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0;
+  font-size: var(--font-size-p1);
+  line-height: var(--font-line-p1);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+
+}
+
+.main {
+  background-color: var(--color-main);
+  color: var(--color-second);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-main-hover);
+    color: var(--color-second-hover);
+  }
+}
+
+
+
+
+.disabled {
+  opacity: 0.87;
+}

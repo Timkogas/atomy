@@ -1,15 +1,20 @@
 :root {
   --font-family: "DM Sans", "DM Sans Placeholder", sans-serif;
 
+  --font-size-p1: 20px;
   --font-size-p2: 16px;
 
+  --font-line-p1: 1.4em;
   --font-line-p2: 1.2em;
 
 
   --color-main: #FF69EB;
+  --color-main-hover: #fa8ceb;
   --color-second: #191919;
+  --color-second-hover: #2e2d2d;
   --color-black: #000000;
   --color-white: #ffffff;
 
   --width-container: 1080px;
+  --padding-container: 15px;
 }

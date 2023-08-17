@@ -8,7 +8,7 @@ const Header: FC = () => {
     <div className={styles.header_wrapper}>
       <header className={styles.header}>
         <NavLink to='/products' className={styles.link}>
-          Купить корейские продукты
+          Купить корейские товары
         </NavLink>
         <NavLink to='/' className={styles.link}>
           Главная

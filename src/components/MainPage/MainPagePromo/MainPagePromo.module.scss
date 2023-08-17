@@ -1,0 +1,101 @@
+@import '../../../assets/styles/media_mixins.scss';
+
+.promo {
+  max-width: var(--width-container);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  color: var(--color-main);
+
+  @include containers-paddings;
+
+  @include _1100 {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  &_wrapper {
+    background-color: var(--color-second);
+  }
+
+  ;
+
+  &_img {
+    height: 560px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 150px 150px;
+
+    @include _1100 {
+      border-radius: 0 0 120px 120px;
+    }
+
+    @include _600 {
+      border-radius: 0 0 50px 50px;
+      height: 450px;
+      object-position: -250px;
+    }
+  }
+
+  &_img_wrapper {
+    background-color: var(--color-main);
+    position: relative;
+
+    &_info {
+      width: 600px;
+      position: absolute;
+      font-weight: 600;
+      top: 50%;
+      left: 50%;
+      transform: translate(-90%, -60%);
+      font-size: 30px;
+      line-height: var(--font-line-p1);
+      text-align: center;
+
+      @include _1100 {
+        transform: translate(-61%, -60%);
+        font-size: 24px;
+        width: 490px;
+      }
+
+      @include _600 {
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        width: 300px;
+      }
+
+      &_text {
+        margin-bottom: 30px;
+        color: var(--color-second);
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 165px;
+  text-transform: uppercase;
+
+  @include _1100 {
+    font-size: 155px;
+  }
+
+  @include _600 {
+    font-size: 80px;
+  }
+}
+
+.subtitle {
+  font-size: var(--font-size-p1);
+  line-height: var(--font-line-p1);
+
+  @include _1100 {
+    width: 80%;
+    text-align: center;
+  }
+}
