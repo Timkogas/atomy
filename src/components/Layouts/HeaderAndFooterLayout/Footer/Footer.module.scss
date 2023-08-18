@@ -1,0 +1,27 @@
+@import '../../../../assets/styles/mixins.scss';
+
+.footer {
+  @include container-center;
+  @include container-paddings;
+  color: var(--color-main);
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include _600 {
+    flex-direction: column;
+    gap: 20px;
+    justify-content:  center;
+    text-align: center;
+  }
+  &_wrapper {
+    background-color: var(--color-second);
+    padding: 30px 0;
+  }
+}
+
+.link {
+  color: var(--color-main);
+  text-decoration: underline;
+}
